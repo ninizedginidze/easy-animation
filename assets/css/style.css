@@ -1,0 +1,29 @@
+@font-face {
+    font-family:'poppins-bold' ;
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+body {
+    background-color: #323641;
+}
+h1 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 50px;
+    font-family:'poppins-bold';
+    color: rgb(39, 203, 224);
+ }
+svg {
+position: absolute;
+top: 30%;
+left:42%;
+animation-name:shake;
+animation-duration:3s;
+animation-timing-function:linear;
+animation-iteration-count: infinite;
+}
+
+ @keyframes shake {
+    0%,100%{transform:translateX(0)}
+    16%,48%,80%{transform:translateX(-30px)}
+    32%,64%{transform:translateX(30px)}
+}
